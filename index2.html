@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Калькулятор мазуту</title>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Калькулятор для перерахунку складу мазуту</h2>
+        <label for="cG">C<sup>Г</sup> (%):</label>
+        <input type="number" id="cG" step="0.01"><br>
+        <label for="hG">H<sup>Г</sup> (%):</label>
+        <input type="number" id="hG" step="0.01"><br>
+        <label for="oG">O<sup>Г</sup> (%):</label>
+        <input type="number" id="oG" step="0.01"><br>
+        <label for="sG">S<sup>Г</sup> (%):</label>
+        <input type="number" id="sG" step="0.01"><br>
+        <label for="qDaf">Q<sup>daf</sup> (МДж/кг):</label>
+        <input type="number" id="qDaf" step="0.01"><br>
+        <label for="wG">W<sup>Г</sup> (%):</label>
+        <input type="number" id="wG" step="0.01"><br>
+        <label for="aG">A<sup>Г</sup> (%):</label>
+        <input type="number" id="aG" step="0.01"><br>
+        <label for="vG">V<sup>Г</sup> (мг/кг):</label>
+        <input type="number" id="vG" step="0.01"><br>
+        <button onclick="calculateFuelComposition2()">Розрахувати</button>
+        <div id="results"></div>
+    </div>
+</body>
+</html>

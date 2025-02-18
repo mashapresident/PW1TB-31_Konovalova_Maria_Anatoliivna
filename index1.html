@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-калькулятор складу палива</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Розрахунок складу сухої та горючої маси палива</h2>
+        <label>H<sup>P</sup>, %: <input type="number" id="hP" step="any" min="0"></label><br>
+        <label>C<sup>P</sup>, %: <input type="number" id="cP" step="any" min="0"></label><br>
+        <label>S<sup>P</sup>, %: <input type="number" id="sP" step="any" min="0"></label><br>
+        <label>N<sup>P</sup>, %: <input type="number" id="nP" step="any" min="0"></label><br>
+        <label>O<sup>P</sup>, %: <input type="number" id="oP" step="any" min="0"></label><br>
+        <label>W<sup>P</sup>, %: <input type="number" id="wP" step="any" min="0"></label><br>
+        <label>A<sup>P</sup>, %: <input type="number" id="aP" step="any" min="0"></label><br>
+        <button onclick="calculateFuelComposition1()">Розрахувати</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
